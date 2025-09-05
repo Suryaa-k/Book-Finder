@@ -1,0 +1,53 @@
+/* App-wide variables, base resets, and layout primitives */
+:root {
+  --bg: #ffffff;
+  --bg-elev: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --brand: #1849a9;
+  --brand-strong: #0f3b8f;
+  --chip-bg: #f9fafb;
+  --chip-border: #e5e7eb;
+  --bg-hero: #0b1220;
+  --bg-body: #f8fafc;
+  --shadow: 0 1px 2px rgba(16,24,40,0.06), 0 1px 3px rgba(16,24,40,0.1);
+}
+
+html.dark {
+  --bg: #0b1220;
+  --bg-elev: #0f172a;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --border: #1f2937;
+  --brand: #3b82f6;
+  --brand-strong: #2563eb;
+  --chip-bg: #111827;
+  --chip-border: #374151;
+  --bg-hero: #0b1220;
+  --bg-body: #0a0f1d;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg-body);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.container { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+.input {
+  width: 100%; padding: 10px 12px; border-radius: 8px;
+  border: 1px solid var(--border); background: var(--bg-elev); color: var(--text); outline: none;
+}
+.input:focus { border-color: var(--brand); }
+.btn {
+  padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--bg-elev); color: var(--text);
+}
+.btn:hover { background: color-mix(in oklab, var(--bg-elev) 90%, #fff); }
+.btn.primary { background: var(--brand); color: #fff; border-color: var(--brand); }
+.btn.primary:hover { background: var(--brand-strong); }
+.muted { color: var(--muted); font-size: 14px; }

@@ -1,0 +1,65 @@
+{
+    "numFound": 3,
+    "start": 0,
+    "numFoundExact": true,
+    "num_found": 3,
+    "documentation_url": "https://openlibrary.org/dev/docs/api/search",
+    "q": "",
+    "offset": null,
+    "docs": [
+        {
+            "author_key": [
+                "OL2666337A"
+            ],
+            "author_name": [
+                "Peter Steele"
+            ],
+            "ebook_access": "no_ebook",
+            "edition_count": 1,
+            "first_publish_year": 1992,
+            "has_fulltext": false,
+            "key": "/works/OL8008880W",
+            "language": [
+                "eng"
+            ],
+            "public_scan_b": false,
+            "title": "Hilarious book-titles & authors"
+        },
+        {
+            "author_key": [
+                "OL2348743A"
+            ],
+            "author_name": [
+                "G. Douglas"
+            ],
+            "ebook_access": "no_ebook",
+            "edition_count": 1,
+            "first_publish_year": 1922,
+            "has_fulltext": false,
+            "key": "/works/OL7645738W",
+            "language": [
+                "eng"
+            ],
+            "public_scan_b": false,
+            "title": "A gossip on book-titles"
+        },
+        {
+            "author_key": [
+                "OL1291470A"
+            ],
+            "author_name": [
+                "Charles Rockwell Lanman"
+            ],
+            "ebook_access": "no_ebook",
+            "edition_count": 1,
+            "first_publish_year": 1909,
+            "has_fulltext": false,
+            "key": "/works/OL33140796W",
+            "language": [
+                "eng"
+            ],
+            "public_scan_b": false,
+            "title": "Pali book-titles and their brief designations"
+        }
+    ]
+}
