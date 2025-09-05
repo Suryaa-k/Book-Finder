@@ -1,12 +1,36 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Book Finder is a React-based web application that helps users (like students, professionals, and book enthusiasts) search and discover books with ease.
+It leverages the Open Library Search API to provide book data including cover images, authors, publication year, and more.
 
-Currently, two official plugins are available:
+The app supports natural language queries (e.g., “Books about Afrofuturism published after 2010”), genre filtering, dark/light theme toggling, and quick navigation through results.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation and setup 
+# Clone the repository
+git clone https://github.com/your-username/book-finder.git
 
-## Expanding the ESLint configuration
+# Navigate into the project folder
+cd book-finder
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+Project Structure 
+
+book-finder/
+├── public/               # Static assets
+├── src/
+│   ├── App.jsx           # Main React component
+│   ├── index.css         # Global styles
+│   ├── App.css           # Component-specific styles
+│   └── main.jsx          # React entry point
+├── package.json          # Dependencies & scripts
+├── vite.config.js        # Vite configuration
+└── README.md             # Project documentation
+
+API Reference 
+
+GET https://openlibrary.org/search.json?q={query}&page={page}
